@@ -1,0 +1,81 @@
+@media screen and (min-width: 700px) {
+
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 12px 20px;
+        border-bottom: none;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: var(--secondary-color);
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    .about-section {
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .about-card,
+    .photo-card {
+        min-height: 250px;
+    }
+
+    .about-card p {
+        padding: 25px;
+        font-size: 1.05rem;
+    }
+
+    .photo-card img {
+        width: 75%;
+        max-width: 300px;
+    }
+
+    .course-filters {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    .about-section {
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+
+    nav a {
+        padding: 12px 20px;
+    }
+}

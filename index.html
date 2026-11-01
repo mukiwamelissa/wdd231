@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Fronted Development - Melissa</title>
+    <meta name="desciption" content="WDD 231 - Web Fronted Development - Melissa Mukiwa">
+    <meta name="author" content="Melissa">
+    <link rel="stylesheet" href="styles/.normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/main.js" defer></script>
+
+
+
+
+</head>
+<body>
+    <header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Site Logo">
+            <span>Site Name</span>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-button">
+            ☰
+        </label>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="chamber.html">Chamber Project</a>
+            <a href="final.html">Final Project</a>
+        </nav>
+    </div>
+    </header>
+
+    <main class="container">
+
+        <h1>Home</h1>
+
+        <section class="about-section">
+
+            <div class="about-card">
+                <h2>About Me</h2>
+                    <p>My name is Melissa Mukiwa. I am currently living in South Africa. I am studying Software Development, where I am learning programming, web development, and problem-solving skills.
+                    My goal is to become a skilled software developer and build applications that help solve real-life problems. I also hope to continue learning new technologies and grow in my career.</p>
+
+            </div>
+
+            <div class="photo-card">
+                <h2>Student Photo</h2>
+                <img src="images/student.jpg" alt="Student photo">
+            </div>
+
+        </section>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-filters">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+
+            <div class="course-list">
+                <div class="course-card">WDD 130</div>
+                <div class="course-card">WDD 131</div>
+                <div class="course-card">WDD 231</div>
+            </div>
+
+            <p class="credits">
+                The total credits for courses listed above is 6.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">X</a>
+        </div>
+
+        <p>&copy; 2026 | Student Name | South Africa</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
