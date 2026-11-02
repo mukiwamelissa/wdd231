@@ -80,6 +80,10 @@ nav {
     background-color: var(--primary-color);
 }
 
+nav.show {
+    display: flex;
+}
+
 #menu-toggle:checked ~ nav {
     display: flex;
 }
@@ -172,6 +176,7 @@ h1 {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .course-filters button:hover {
