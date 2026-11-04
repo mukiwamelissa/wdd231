@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #164e5a;
-    --secondary-color: #286b78;
-    --background-color: #e8f0f2;
+    --primary-color: #fc68b2;
+    --secondary-color: #f52d97;
+    --background-color: #f8def4;
     --card-color: #ffffff;
     --text-color: #263b40;
     --border-color: #cbdde0;
@@ -110,7 +110,7 @@ h1 {
     color: var(--primary-color);
 }
 
-.about-section {
+.about-section, .photo-section, .courses {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
