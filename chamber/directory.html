@@ -3,22 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Web Fronted Development - Melissa</title>
-    <meta name="description" content="Explore my student portfolio, learn about me, view my web development projects, and discover my progress in the Web and Computer Programming certificate.">
-    <meta name="author" content="Melissa">
-    
+    <title>Directory | Joburg Vacation Chambers</title>
+    <meta name="description" content="Discover local businesses and services in our Chamber of  Directory.">
+    <meta name="author" content="Melissa Mukiwa">
+
+    <link rel="icon" href="images/favicon.ico">
+
     <meta property="og:title" content="Joburg Vacation Chambers | Vacation Planning in Johannesburg" />
     <meta property="og:description" content="Plan Less. Explore More. Joburg Vacation Chambers helps you plan family getaways, romantic trips, safaris & tours in Johannesburg, Soweto & Gauteng. Custom itineraries, clear pricing & easy booking." />
     <meta property="og:url" content="https://www.joburgvacationchambers.co.za/" />
     <meta property="og:image" content="https://www.joburgvacationchambers.co.za/images/joburg-vacation-chambers-og.jpg" />
-    
-    <link rel="icon" href="favicon.ico">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
 </head>
 <body>
-    
+
+  <header>
+    <div class="header-brand">
+      <img src="images/favicon.ico" alt="Chamber Logo" class="logo">
+      <h1>Joburg Vacation Chamber</h1>
+    </div>
+    <button id="hamburger-menu" aria-label="Toggle Navigation Menu">&#9776;</button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="directory-header">
+      <h2>Directory</h2>
+      <div class="view-toggle">
+        <button id="grid-view" class="active-view" aria-label="Grid View">Grid Cards &#9638;</button>
+        <button id="list-view" aria-label="List View">Line List &#9776;</button>
+      </div>
+    </div>
+
+    <article id="members-container" class="grid-layout">
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+        <p><strong>Joburg Vacation Chambers</strong></p>
+        <p>12 Main Street, Sandton<br>Johannesburg, 2196<br>info@joburgvacationchambers.co.za<br>(011) 555-2300</p>
+    </div>
+    <div class="socials">
+        <a href="https://www.youtube.com" title="YouTube">▶</a>
+        <a href="https://twitter.com" title="Twitter">𝕏</a>
+        <a href="https://www.linkedin.com" title="LinkedIn">in</a>
+  </div>
+    <div class="footer-dev">
+        <p><b>WDD231 Class Project</b><br>Joburg Vacation Chambers<br> &copy; <span id="currentyear"></span> | <strong>Melissa Mukiwa</strong> | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
 </body>
 </html>

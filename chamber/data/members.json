@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Soweto Explorer Tours",
+    "description": "Cultural & Heritage Tours",
+    "tag": "TOURS",
+    "email": "hello@sowetoexplorer.co.za",
+    "phone": "011 555-0142",
+    "website": "sowetoexplorer.co.za",
+    "image": "images/soweto-explorer-tours.png",
+    "membership": 3
+  },
+  {
+    "name": "Pilanesberg Safari Co.",
+    "description": "Safari & Game Drives",
+    "tag": "SAFARI",
+    "email": "book@pilanesbergsafari.co.za",
+    "phone": "011 555-0188",
+    "website": "pilanesbergsafari.co.za",
+    "image": "images/pilanesberg-safari.png",
+    "membership": 3
+  },
+  {
+    "name": "Sandton Sky Hotel",
+    "description": "Luxury Stay in Sandton",
+    "tag": "HOTEL",
+    "email": "stay@sandtonsky.co.za",
+    "phone": "011 555-0123",
+    "website": "sandtonsky.co.za",
+    "image": "images/sandton-sky-hotel.png",
+    "membership": 2
+  },
+  {
+    "name": "Magalies Adventure",
+    "description": "Zipline, Hiking & Canopy",
+    "tag": "ADVENTURE",
+    "email": "info@magaliesadventure.co.za",
+    "phone": "011 555-0199",
+    "website": "magaliesadventure.co.za",
+    "image": "images/magalies-adventure.png",
+    "membership": 2
+  },
+  {
+    "name": "Joburg Food Journey",
+    "description": "Food & Market Tours",
+    "tag": "FOOD",
+    "email": "taste@joburgfood.co.za",
+    "phone": "011 555-0165",
+    "website": "joburgfood.co.za",
+    "image": "images/joburg-food-journey.png",
+    "membership": 1
+  },
+  {
+    "name": "Gold Reef Getaways",
+    "description": "Family Weekend Packages",
+    "tag": "FAMILY",
+    "email": "family@goldreefgetaways.co.za",
+    "phone": "011 555-0177",
+    "website": "goldreefgetaways.co.za",
+    "image": "images/gold-reef-getaways.png",
+    "membership": 3
+  },
+  {
+    "name": "Sunset Romance Co.",
+    "description": "Couples & Anniversary Trips",
+    "tag": "COUPLES",
+    "email": "love@sunsetromance.co.za",
+    "phone": "011 555-0110",
+    "website": "sunsetromance.co.za",
+    "image": "images/sunset-romance.png",
+    "membership": 2
+  },
+  {
+    "name": "City Lights Night Tours",
+    "description": "Nightlife & City Tours",
+    "tag": "NIGHTLIFE",
+    "email": "nights@citylights.co.za",
+    "phone": "011 555-0134",
+    "website": "citylights.co.za",
+    "image": "images/city-lights-night-tours.png",
+    "membership": 1
+  },
+  {
+    "name": "Cradle Nature Retreat",
+    "description": "Wellness & Nature Escapes",
+    "tag": "WELLNESS",
+    "email": "relax@cradleretreat.co.za",
+    "phone": "011 555-0156",
+    "website": "cradleretreat.co.za",
+    "image": "images/cradle-nature-retreat.png",
+    "membership": 3
+  }
+]
