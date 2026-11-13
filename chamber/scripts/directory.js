@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       section.innerHTML = `
          <div class="member-card-top">
-        <h3>${member.name}</h3>
+        <h2>${member.name}</h2>
         <p>${member.description}</p>
         <span class="tag">${member.tag}</span>
       </div>
