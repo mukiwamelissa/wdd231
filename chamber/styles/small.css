@@ -279,3 +279,196 @@ footer p {
   font-weight:400;
   font-size:50px;
 }
+
+.hero {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(14, 107, 122, 0.9), transparent);
+  color: #ffffff;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.hero-content p {
+  font-size: 0.95rem;
+  margin: 0 0 1rem 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: #222222;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #d89133;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+.events-card ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.events-card li {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+#current-weather {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#current-weather img {
+  width: 64px;
+  height: 64px;
+}
+
+#temp-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+#weather-desc {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.forecast-container h3 {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+#forecast-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.forecast-item {
+  background-color: var(--background-light);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.5rem;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.forecast-item img {
+  width: 36px;
+  height: 36px;
+}
+
+/* Spotlights Section */
+.spotlights-section {
+  margin-bottom: 2rem;
+}
+
+.spotlights-section > h2 {
+  text-align: center;
+  color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.spotlights-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.spotlight-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.spotlight-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+}
+
+.spotlight-card h3 {
+  margin: 0.5rem 0;
+  color: var(--primary-color);
+}
+
+.spotlight-card p {
+  font-size: 0.9rem;
+  margin: 0.4rem 0;
+}
+
+.spotlight-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-decoration: none;
+}

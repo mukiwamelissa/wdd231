@@ -39,3 +39,27 @@
     text-align: left;
     padding: 2rem;
   }
+
+  .hero-image {
+    height: 450px;
+  }
+
+  .hero-content {
+    padding: 3rem;
+    text-align: left;
+    max-width: 650px;
+    background: linear-gradient(to right, rgba(14, 107, 122, 0.95), transparent);
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .spotlights-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
