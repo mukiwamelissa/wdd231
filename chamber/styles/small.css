@@ -48,7 +48,7 @@ header {
   height: 40px;
 }
 
-.header-brand h1 {
+.header-brand p {
   font-size: 1.4rem;
   font-family: var(--font-heading);
   margin: 0;

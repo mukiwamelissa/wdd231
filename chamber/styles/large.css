@@ -3,7 +3,7 @@
   }
 
   nav {
-    display: block !important;
+    display: block;
     width: auto;
   }
 
@@ -62,4 +62,3 @@
   .spotlights-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-}
