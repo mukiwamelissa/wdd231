@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joburg Vacation Chambers - Join Us</title>
+  <meta name="description" content="Apply for membership with Joburg Vacation Chambers. Choose from Non-Profit, Bronze, Silver, or Gold membership tiers to grow your tourism or hospitality business in Gauteng.">
+  <meta name="author" content="Your Full Name">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:title" content="Joburg Vacation Chambers - Membership Application">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Partner with Joburg Vacation Chambers to connect with travelers, boost visibility, and grow your business in Johannesburg.">
+  <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/join.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Style Sheets -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JavaScript Files -->
+  <script src="scripts/join.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+</head>
+<body>
+
+  <!-- Consistent Header & Navigation -->
+  <header>
+    <div class="header-brand">
+      <img src="images/favicon.ico" alt="Joburg Vacation Chambers Logo" class="logo">
+      <h1>Joburg Vacation Chambers</h1>
+    </div>
+    <button id="hamburger-menu" aria-label="Toggle Navigation Menu">&#9776;</button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="join-main">
+    <div class="page-intro">
+      <h2>Chamber Membership Application</h2>
+      <p>Join Johannesburg's leading tourism and hospitality network. Complete the form below to apply.</p>
+    </div>
+
+    <div class="join-layout">
+      <!-- Application Form -->
+      <section class="form-section">
+        <h3>Applicant &amp; Business Information</h3>
+        <form method="get" action="thankyou.html" class="chamber-form">
+          
+          <label title="Enter your legal first name">
+            First Name <span class="req">*</span>
+            <input type="text" name="firstName" title="Applicant's First Name" autocomplete="given-name" required>
+          </label>
+
+          <label title="Enter your legal last name">
+            Last Name <span class="req">*</span>
+            <input type="text" name="lastName" title="Applicant's Last Name" autocomplete="family-name" required>
+          </label>
+
+          <label title="Minimum 7 characters; letters, spaces, and hyphens only">
+            Organizational Title
+            <input type="text" name="orgTitle" title="Organizational Title (at least 7 characters using only letters, hyphens, and spaces)" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+          </label>
+
+          <label title="Enter a valid work or business email address">
+            Email Address <span class="req">*</span>
+            <input type="email" name="email" title="Business Email Address" autocomplete="email" placeholder="lerato@joburgstays.co.za" required>
+          </label>
+
+          <label title="Enter your mobile phone number">
+            Mobile Phone Number <span class="req">*</span>
+            <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+          </label>
+
+          <label title="Enter your business or organization name">
+            Business / Organization Name <span class="req">*</span>
+            <input type="text" name="orgName" title="Business or Organization Name" autocomplete="organization" required>
+          </label>
+
+          <label title="Choose your preferred chamber membership tier">
+            Membership Level <span class="req">*</span>
+            <select name="membership" title="Select Membership Level" required>
+              <option value="" disabled selected>-- Select a Membership Level --</option>
+              <option value="np">NP Membership (Non-Profit - No Fee)</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label title="Briefly describe your business, tours, or hospitality services">
+            Business / Organization Description
+            <textarea name="description" title="Business or Organization Description" rows="4"></textarea>
+          </label>
+
+          <!-- Hidden Timestamp Field -->
+          <input type="hidden" name="timestamp" id="timestamp">
+
+          <input type="submit" value="Submit Membership Application" class="submit-btn">
+        </form>
+      </section>
+
+      <!-- Membership Level Cards -->
+      <aside class="membership-cards-section">
+        <h3>Membership Tiers &amp; Benefits</h3>
+        <div class="membership-cards">
+          
+          <div class="tier-card card-anim-1">
+            <h4>Non-Profit (NP) Membership</h4>
+            <p class="tier-price">Free (R0 / year)</p>
+            <p>Designed for registered non-profit cultural, conservation, and community organizations.</p>
+            <button type="button" class="info-btn" data-modal="modal-np">Learn More</button>
+          </div>
+
+          <div class="tier-card card-anim-2">
+            <h4>Bronze Membership</h4>
+            <p class="tier-price">R1,500 / year</p>
+            <p>Essential directory listing and networking access for emerging local operators.</p>
+            <button type="button" class="info-btn" data-modal="modal-bronze">Learn More</button>
+          </div>
+
+          <div class="tier-card card-anim-3">
+            <h4>Silver Membership</h4>
+            <p class="tier-price">R3,500 / year</p>
+            <p>Enhanced visibility, training workshops, and rotating spotlight features.</p>
+            <button type="button" class="info-btn" data-modal="modal-silver">Learn More</button>
+          </div>
+
+          <div class="tier-card card-anim-4">
+            <h4>Gold Membership</h4>
+            <p class="tier-price">R6,500 / year</p>
+            <p>Premier placement, VIP expo booths, homepage spotlights, and priority leads.</p>
+            <button type="button" class="info-btn" data-modal="modal-gold">Learn More</button>
+          </div>
+
+        </div>
+      </aside>
+    </div>
+
+    <!-- Four HTML Dialog Modals for Membership Benefits -->
+    <dialog id="modal-np" class="membership-modal">
+      <div class="modal-content">
+        <button type="button" class="close-modal" aria-label="Close Modal">&times;</button>
+        <h3>Non-Profit (NP) Membership Benefits</h3>
+        <p class="modal-cost">Annual Fee: <strong>R0 (Free for verified NPOs)</strong></p>
+        <ul>
+          <li>Standard listing in the Joburg Vacation Chambers online directory</li>
+          <li>Invitations to quarterly community tourism &amp; heritage mixers</li>
+          <li>Access to monthly Gauteng travel trend newsletters</li>
+          <li>Ability to post community events on the chamber calendar</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog id="modal-bronze" class="membership-modal">
+      <div class="modal-content">
+        <button type="button" class="close-modal" aria-label="Close Modal">&times;</button>
+        <h3>Bronze Membership Benefits</h3>
+        <p class="modal-cost">Annual Fee: <strong>R1,500 / year</strong></p>
+        <ul>
+          <li>All Non-Profit Membership benefits included</li>
+          <li>Enhanced directory card with logo, website link, and booking contact</li>
+          <li>10% discount on Joburg Tourism Expo tickets and workshops</li>
+          <li>Digital "Proud Member" badge for your website and social channels</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog id="modal-silver" class="membership-modal">
+      <div class="modal-content">
+        <button type="button" class="close-modal" aria-label="Close Modal">&times;</button>
+        <h3>Silver Membership Benefits</h3>
+        <p class="modal-cost">Annual Fee: <strong>R3,500 / year</strong></p>
+        <ul>
+          <li>All Bronze Membership benefits included</li>
+          <li>Eligible for randomized Homepage Spotlight advertisements</li>
+          <li>25% discount on annual tourism workshops and hospitality training</li>
+          <li>Inclusion in seasonal travel guides (Family, Couples, and Safari itineraries)</li>
+          <li>Two complimentary passes to quarterly networking luncheons</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog id="modal-gold" class="membership-modal">
+      <div class="modal-content">
+        <button type="button" class="close-modal" aria-label="Close Modal">&times;</button>
+        <h3>Gold Membership Benefits</h3>
+        <p class="modal-cost">Annual Fee: <strong>R6,500 / year</strong></p>
+        <ul>
+          <li>All Silver Membership benefits included</li>
+          <li>Priority Homepage Spotlight placement &amp; featured package promotion</li>
+          <li>Complimentary exhibition booth at the annual Joburg Tourism Expo</li>
+          <li>50% discount on all staff hospitality &amp; digital marketing training</li>
+          <li>Direct warm leads from the "Plan My Trip" custom itinerary builder</li>
+        </ul>
+      </div>
+    </dialog>
+
+  </main>
+
+  <!-- Consistent Footer -->
+  <footer>
+    <div class="footer-contact">
+      <p><strong>Joburg Vacation Chambers</strong></p>
+      <p>128 Nelson Mandela Square, Sandton, Johannesburg</p>
+      <p>support@joburgvacationchambers.co.za | +27 (011) 555-0192</p>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="currentyear"></span> | <strong>Your Full Name</strong> | WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

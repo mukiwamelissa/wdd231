@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joburg Vacation Chambers - Application Received</title>
+  <meta name="description" content="Thank you for applying to join Joburg Vacation Chambers. Review your submitted membership application details below.">
+  <meta name="author" content="Your Full Name">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:title" content="Joburg Vacation Chambers - Thank You">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Your membership application with Joburg Vacation Chambers has been received.">
+  <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/thankyou.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Style Sheets -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JavaScript Files -->
+  <script src="scripts/thankyou.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+</head>
+<body>
+
+  <!-- Consistent Header & Navigation -->
+  <header>
+    <div class="header-brand">
+      <img src="images/favicon.ico" alt="Joburg Vacation Chambers Logo" class="logo">
+      <h1>Joburg Vacation Chambers</h1>
+    </div>
+    <button id="hamburger-menu" aria-label="Toggle Navigation Menu">&#9776;</button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="thankyou-main">
+    <section class="confirmation-card">
+      <div class="confirmation-banner">
+        <h2>Thank You for Applying!</h2>
+        <p>We have received your membership application for <strong>Joburg Vacation Chambers</strong>. Our membership coordinator will review your details and reach out within 2 business days.</p>
+      </div>
+
+      <div class="submitted-details">
+        <h3>Submitted Application Summary</h3>
+        <dl id="results-list" class="details-grid">
+          <!-- Populated dynamically via URLSearchParams in scripts/thankyou.js -->
+        </dl>
+      </div>
+
+      <div class="confirmation-actions">
+        <a href="index.html" class="cta-button">Return to Home</a>
+        <a href="directory.html" class="secondary-link">Explore Member Directory</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Consistent Footer -->
+  <footer>
+    <div class="footer-contact">
+      <p><strong>Joburg Vacation Chambers</strong></p>
+      <p>128 Nelson Mandela Square, Sandton, Johannesburg</p>
+      <p>support@joburgvacationchambers.co.za | +27 (011) 555-0192</p>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="currentyear"></span> | <strong>Your Full Name</strong> | WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

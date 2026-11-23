@@ -62,3 +62,17 @@
   .spotlights-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media (min-width: 768px) {
+  /* Place Membership Cards to the Right of the Form on Larger Screens */
+  .join-layout {
+    grid-template-columns: 1.35fr 1fr;
+    align-items: start;
+  }
+
+  .detail-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
