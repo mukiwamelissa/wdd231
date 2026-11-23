@@ -76,3 +76,27 @@
     align-items: center;
   }
 }
+
+  .discover-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card4 card5 card6 card6"
+      "card7 card7 card8 card8";
+  }
+
+  /* Wide spotlight cards on desktop span 2 columns with side-by-side image & copy */
+  .area-card1,
+  .area-card6,
+  .area-card7,
+  .area-card8 {
+    grid-template-columns: 280px 1fr;
+    grid-template-areas:
+      "photo title"
+      "photo addr"
+      "photo desc"
+      "photo btn";
+    column-gap: 1.15rem;
+    align-items: center;
+  }
+}

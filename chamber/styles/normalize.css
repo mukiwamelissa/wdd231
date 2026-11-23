@@ -347,3 +347,41 @@ template {
 [hidden] {
   display: none;
 }
+
+/* Medium Screen Layout (641px - 1024px): Asymmetric Magazine Grid Areas + Horizontal Card Internal Layout */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card1 card1"
+      "card2 card3"
+      "card4 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+
+  /* Featured full-width cards (card1 & card4) arrange image beside text */
+  .area-card1,
+  .area-card4 {
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+      "photo title"
+      "photo addr"
+      "photo desc"
+      "photo btn";
+    column-gap: 1.25rem;
+    align-items: start;
+  }
+}
+
+/* Hover Effect Enabled for Non-Mobile Views (641px and wider) */
+@media (min-width: 641px) {
+  .discover-card img {
+    transition: transform 0.35s ease, filter 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  .discover-card figure:hover img {
+    transform: scale(1.06);
+    filter: brightness(1.06) contrast(1.05);
+  }
+}

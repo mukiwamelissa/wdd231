@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joburg Vacation Chambers - Discover Johannesburg</title>
+  <meta name="description" content="Discover 8 must-visit landmarks, cultural hubs, and weekend attractions in and around Johannesburg with Joburg Vacation Chambers.">
+  <meta name="author" content="Your Full Name">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:title" content="Joburg Vacation Chambers - Discover Johannesburg">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Explore Johannesburg's top attractions, cultural heritage sites, and scenic weekend escapes.">
+  <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/discover.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Style Sheets (Mobile First -> Medium -> Large) -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px)">
+  <link rel="stylesheet" href="styles/larger.css" media="(min-width: 1025px)">
+
+  <!-- ES Module Script & Dates Script -->
+  <script type="module" src="scripts/discover.js"></script>
+  <script src="scripts/dates.js" defer></script>
+</head>
+<body>
+
+  <!-- Consistent Header & Navigation -->
+  <header>
+    <div class="header-brand">
+      <img src="images/favicon.ico" alt="Joburg Vacation Chambers Logo" class="logo">
+      <h1>Joburg Vacation Chambers</h1>
+    </div>
+    <button id="hamburger-menu" aria-label="Toggle Navigation Menu">&#9776;</button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="discover-main">
+    <div class="page-intro">
+      <h2>Discover Johannesburg &amp; Gauteng</h2>
+      <p>Explore eight iconic attractions, cultural landmarks, and weekend escapes curated by Joburg Vacation Chambers.</p>
+    </div>
+
+    <!-- LocalStorage Visit Banner -->
+    <aside id="visit-banner" class="visit-banner" aria-live="polite">
+      <p id="visit-message"></p>
+      <button type="button" id="close-banner" aria-label="Dismiss message">&times;</button>
+    </aside>
+
+    <!-- Named Grid Areas Container -->
+    <section id="discover-grid" class="discover-grid" aria-label="Johannesburg Points of Interest">
+      <!-- 8 Cards injected dynamically via ES Module scripts/discover.js -->
+    </section>
+
+    <!-- Attraction Detail Modal -->
+    <dialog id="attraction-modal" class="membership-modal">
+      <div class="modal-content">
+        <button type="button" id="close-attraction-modal" class="close-modal" aria-label="Close Modal">&times;</button>
+        <h3 id="modal-title"></h3>
+        <p class="modal-cost"><strong>Location:</strong> <span id="modal-address"></span></p>
+        <p id="modal-description"></p>
+        <a href="join.html" class="cta-button">Partner With Us</a>
+      </div>
+    </dialog>
+  </main>
+
+  <!-- Consistent Footer -->
+  <footer>
+    <div class="footer-contact">
+      <p><strong>Joburg Vacation Chambers</strong></p>
+      <p>128 Nelson Mandela Square, Sandton, Johannesburg</p>
+      <p>support@joburgvacationchambers.co.za | +27 (011) 555-0192</p>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="currentyear"></span> | <strong>Your Full Name</strong> | WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>
