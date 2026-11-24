@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Mobile Hamburger Menu
   const navMenu = document.getElementById("primary-nav");
   const hamburger = document.getElementById("hamburger-menu");
   if (hamburger && navMenu) {

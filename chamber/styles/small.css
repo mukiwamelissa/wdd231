@@ -421,7 +421,6 @@ footer p {
   height: 36px;
 }
 
-/* Spotlights Section */
 .spotlights-section {
   margin-bottom: 2rem;
 }
@@ -473,7 +472,6 @@ footer p {
   text-decoration: none;
 }
 
-/* Join Page Layout (Mobile First) */
 .join-main,
 .thankyou-main {
   max-width: 1200px;
@@ -486,7 +484,7 @@ footer p {
   margin-bottom: 1.5rem;
 }
 
-.page-intro h2 {
+.page-intro h1 {
   font-family: 'Poppins', sans-serif;
   color: #0E6B7A;
   margin-bottom: 0.4rem;
@@ -507,8 +505,8 @@ footer p {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.form-section h3,
-.membership-cards-section h3 {
+.form-section h1,
+.membership-cards-section h2 {
   font-family: 'Poppins', sans-serif;
   color: #0E6B7A;
   margin-top: 0;
@@ -516,7 +514,6 @@ footer p {
   padding-bottom: 0.5rem;
 }
 
-/* Accessible Form Styling */
 .chamber-form {
   display: flex;
   flex-direction: column;
@@ -580,7 +577,6 @@ footer p {
   background-color: #094c57;
 }
 
-/* Membership Level Cards + Initial Load Animation */
 .membership-cards {
   display: flex;
   flex-direction: column;
@@ -648,7 +644,6 @@ footer p {
   background-color: #df912d;
 }
 
-/* Native HTML Dialog Modals */
 .membership-modal {
   border: none;
   border-radius: 8px;
@@ -699,7 +694,6 @@ footer p {
   cursor: pointer;
 }
 
-/* Thank You Confirmation Page */
 .confirmation-card {
   background-color: #ffffff;
   border: 1px solid #dddddd;
@@ -772,7 +766,6 @@ footer p {
   text-decoration: underline;
 }
 
-/* Discover Page Base & Visitor Banner */
 .discover-main {
   max-width: 1280px;
   margin: 0 auto;

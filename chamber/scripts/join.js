@@ -1,14 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Mobile Hamburger Menu
   const navMenu = document.getElementById("primary-nav");
   const hamburger = document.getElementById("hamburger-menu");
-  if (hamburger && navMenu) {
-    hamburger.addEventListener("click", () => {
-      navMenu.classList.toggle("open");
-    });
-  }
 
-  // Set Hidden Timestamp Field to Current Date and Time on Form Load
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+
   const timestampField = document.getElementById("timestamp");
   if (timestampField) {
     const now = new Date();
@@ -40,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Allow clicking backdrop to close modal
   const dialogs = document.querySelectorAll(".membership-modal");
   dialogs.forEach((dialog) => {
     dialog.addEventListener("click", (event) => {

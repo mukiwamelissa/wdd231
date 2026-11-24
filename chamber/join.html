@@ -5,41 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joburg Vacation Chambers - Join Us</title>
   <meta name="description" content="Apply for membership with Joburg Vacation Chambers. Choose from Non-Profit, Bronze, Silver, or Gold membership tiers to grow your tourism or hospitality business in Gauteng.">
-  <meta name="author" content="Your Full Name">
+  <meta name="author" content="Melissa Mukiwa">
 
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico">
 
-  <!-- Facebook Open Graph Meta Tags -->
-  <meta property="og:title" content="Joburg Vacation Chambers - Membership Application">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="Partner with Joburg Vacation Chambers to connect with travelers, boost visibility, and grow your business in Johannesburg.">
-  <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/og-image.jpg">
-  <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/join.html">
+  <meta property="og:title" content="Joburg Vacation Chambers | Vacation Planning in Johannesburg" />
+  <meta property="og:description" content="Plan less, explore more! Book family trips, safaris & Soweto tours in Johannesburg with Joburg Vacation Chambers today." />
+  <meta property="og:url" content="https://www.joburgvacationchambers.co.za/" />
+  <meta property="og:image" content="https://mukiwamelissa.github.io/wdd231/chamber/images/joburg-vacation-chambers-og.png" />
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
-  <!-- CSS Style Sheets -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-  <!-- JavaScript Files -->
   <script src="scripts/join.js" defer></script>
   <script src="scripts/dates.js" defer></script>
 </head>
+
 <body>
 
-  <!-- Consistent Header & Navigation -->
   <header>
     <div class="header-brand">
-      <img src="images/favicon.ico" alt="Joburg Vacation Chambers Logo" class="logo">
-      <h1>Joburg Vacation Chambers</h1>
+      <img src="images/favicon.ico" alt="Chamber Logo" class="logo">
+      <p>Joburg Vacation Chambers</p>
     </div>
+
     <button id="hamburger-menu" aria-label="Toggle Navigation Menu">&#9776;</button>
+
     <nav id="primary-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -52,14 +48,14 @@
 
   <main class="join-main">
     <div class="page-intro">
-      <h2>Chamber Membership Application</h2>
+      <h1>Chamber Membership Application</h1>
       <p>Join Johannesburg's leading tourism and hospitality network. Complete the form below to apply.</p>
     </div>
 
     <div class="join-layout">
       <!-- Application Form -->
       <section class="form-section">
-        <h3>Applicant &amp; Business Information</h3>
+        <h2>Applicant &amp; Business Information</h2>
         <form method="get" action="thankyou.html" class="chamber-form">
           
           <label title="Enter your legal first name">
@@ -115,7 +111,6 @@
         </form>
       </section>
 
-      <!-- Membership Level Cards -->
       <aside class="membership-cards-section">
         <h3>Membership Tiers &amp; Benefits</h3>
         <div class="membership-cards">
@@ -152,7 +147,7 @@
       </aside>
     </div>
 
-    <!-- Four HTML Dialog Modals for Membership Benefits -->
+    <!-- Modals for Membership Benefits -->
     <dialog id="modal-np" class="membership-modal">
       <div class="modal-content">
         <button type="button" class="close-modal" aria-label="Close Modal">&times;</button>
@@ -213,17 +208,21 @@
 
   </main>
 
-  <!-- Consistent Footer -->
   <footer>
     <div class="footer-contact">
-      <p><strong>Joburg Vacation Chambers</strong></p>
-      <p>128 Nelson Mandela Square, Sandton, Johannesburg</p>
-      <p>support@joburgvacationchambers.co.za | +27 (011) 555-0192</p>
+        <p><strong>Joburg Vacation Chambers</strong></p>
+        <p>12 Main Street, Sandton<br>Johannesburg, 2196<br>info@joburgvacationchambers.co.za<br>(011) 555-2300</p>
     </div>
+    <div class="socials">
+        <a href="https://www.youtube.com" title="YouTube">▶</a>
+        <a href="https://twitter.com" title="Twitter">𝕏</a>
+        <a href="https://www.linkedin.com" title="LinkedIn">in</a>
+  </div>
     <div class="footer-dev">
-      <p>&copy; <span id="currentyear"></span> | <strong>Your Full Name</strong> | WDD 231</p>
-      <p>Last Modified: <span id="lastModified"></span></p>
+        <p><b>WDD231 Class Project</b><br>Joburg Vacation Chambers<br> &copy; <span id="currentyear"></span> | <strong>Melissa Mukiwa</strong> | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </div>
+
   </footer>
 
 </body>

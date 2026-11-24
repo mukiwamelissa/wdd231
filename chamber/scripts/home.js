@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const navMenu = document.getElementById("primary-nav");
   const hamburger = document.getElementById("hamburger-menu");
 
- hamburger.addEventListener("click", () => {
+  hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("open");
   });
+  
 
   async function loadSpotlights() {
     try {
