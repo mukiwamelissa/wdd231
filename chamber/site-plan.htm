@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan | Joburg Vacation Chambers</title>
+  <meta name="description" content="Project site plan for Joburg Vacation Chambers outlining site name, purpose, visitor scenarios, color scheme, typography, and home page wireframes.">
+  <meta name="author" content="Your Full Name">
+
+  <!-- Google Fonts: Poppins & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Exclusive Site Plan Color Scheme & Typography */
+    :root {
+      --primary-teal: #0E6B7A;
+      --accent-orange: #F2A541;
+      --bg-warm: #FFFBF5;
+      --surface-white: #FFFFFF;
+      --text-charcoal: #222222;
+      --border-soft: #E5DEC9;
+      --heading-font: 'Poppins', sans-serif;
+      --body-font: 'Inter', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-warm);
+      color: var(--text-charcoal);
+      font-family: var(--body-font);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-teal);
+      color: var(--surface-white);
+      padding: 2rem 1.25rem;
+      border-bottom: 5px solid var(--accent-orange);
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      font-family: var(--heading-font);
+      margin: 0 0 0.35rem 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    main {
+      padding: 1.75rem 1.25rem 3rem 1.25rem;
+    }
+
+    section {
+      background-color: var(--surface-white);
+      border: 1px solid var(--border-soft);
+      border-left: 5px solid var(--primary-teal);
+      border-radius: 6px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    section h2 {
+      font-family: var(--heading-font);
+      color: var(--primary-teal);
+      margin: 0 0 0.75rem 0;
+      font-size: 1.35rem;
+    }
+
+    section h3 {
+      font-family: var(--heading-font);
+      color: var(--text-charcoal);
+      margin: 1rem 0 0.4rem 0;
+      font-size: 1.05rem;
+    }
+
+    ul {
+      margin: 0.4rem 0 0 0;
+      padding-left: 1.35rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .swatch-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .swatch-item {
+      border: 1px solid var(--border-soft);
+      border-radius: 6px;
+      padding: 0.75rem;
+      background-color: var(--bg-warm);
+    }
+
+    .swatch-box {
+      width: 100%;
+      height: 36px;
+      border-radius: 4px;
+      border: 1px solid var(--text-charcoal);
+      margin-bottom: 0.5rem;
+    }
+
+    .swatch-teal { background-color: var(--primary-teal); }
+    .swatch-orange { background-color: var(--accent-orange); }
+    .swatch-warm { background-color: var(--bg-warm); }
+    .swatch-charcoal { background-color: var(--text-charcoal); }
+
+    .sample-heading {
+      font-family: var(--heading-font);
+      color: var(--primary-teal);
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0.5rem 0;
+    }
+
+    .sample-body {
+      font-family: var(--body-font);
+      color: var(--text-charcoal);
+      font-size: 1rem;
+      margin: 0.25rem 0 0.75rem 0;
+    }
+
+    .wireframe-note {
+      background-color: var(--bg-warm);
+      border: 2px dashed var(--accent-orange);
+      border-radius: 6px;
+      padding: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    footer {
+      background-color: var(--primary-teal);
+      color: var(--surface-white);
+      text-align: center;
+      padding: 1.25rem;
+      border-top: 4px solid var(--accent-orange);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Website Project Plan: Joburg Vacation Chambers</h1>
+      <p>Planning Document &bull; <em>Plan Less. Explore More. Love Johannesburg.</em></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 1. Site Name -->
+    <section id="site-name">
+      <h2>1. Site Name</h2>
+      <p><strong>Joburg Vacation Chambers</strong> (Suggested domain: <code>www.joburgvacationchambers.co.za</code>)</p>
+      <p><strong>Reason Selected:</strong> The name clearly connects vacation planning and local tourism coordination with Johannesburg and Gauteng, giving locals, first-time international visitors, and tourism businesses a memorable, trustworthy identity.</p>
+    </section>
+
+    <!-- 2. Site Purpose -->
+    <section id="site-purpose">
+      <h2>2. Site Purpose</h2>
+      <p>Joburg Vacation Chambers serves as a planning and discovery hub for trips in and around Johannesburg, including Soweto, Pretoria, Magaliesburg, and Pilanesberg. The site provides:</p>
+      <ul>
+        <li>Curated vacation packages, day trips, and weekend getaways for families, couples, adventure seekers, and budget travelers.</li>
+        <li>Destination guides, travel tips, upcoming local events, and live Johannesburg weather information.</li>
+        <li>An interactive trip planning flow, member directory and spotlights, and a membership application form for local operators.</li>
+      </ul>
+    </section>
+
+    <!-- 3. Scenarios -->
+    <section id="scenarios">
+      <h2>3. Visitor Scenarios</h2>
+      <ul>
+        <li>Where can I find a safe, kid-friendly weekend getaway near Johannesburg with clear pricing and activities for the whole family?</li>
+        <li>How can a first-time visitor plan a multi-day itinerary covering Johannesburg, Soweto, and a nearby safari with guided transport?</li>
+        <li>What romantic getaway options or sunset experiences are available near Johannesburg, and how do I contact the team to book?</li>
+        <li>How can a local tour, lodge, or hospitality business join the chamber or view featured member listings?</li>
+      </ul>
+    </section>
+
+    <!-- 4. Color Scheme -->
+    <section id="color-scheme">
+      <h2>4. Color Scheme</h2>
+      <p>This document uses the planned vacation palette exclusively:</p>
+      <ul class="swatch-list">
+        <li class="swatch-item">
+          <div class="swatch-box swatch-teal" aria-hidden="true"></div>
+          <strong>Primary Color &mdash; #0E6B7A (Teal Blue):</strong> Used for the page header, footer, section borders, and primary headings to convey trust and travel energy.
+        </li>
+        <li class="swatch-item">
+          <div class="swatch-box swatch-orange" aria-hidden="true"></div>
+          <strong>Secondary / Accent Color &mdash; #F2A541 (Sunset Orange):</strong> Used for header/footer accent dividers, callout borders, and visual highlights.
+        </li>
+        <li class="swatch-item">
+          <div class="swatch-box swatch-warm" aria-hidden="true"></div>
+          <strong>Background Color &mdash; #FFFBF5 (Warm Off-White):</strong> Used as the main page background and inside callout/swatch panels for a welcoming feel.
+        </li>
+        <li class="swatch-item">
+          <div class="swatch-box swatch-charcoal" aria-hidden="true"></div>
+          <strong>Text Color &mdash; #222222 (Charcoal):</strong> Used for body copy, subheadings, and readable contrast across light surfaces.
+        </li>
+      </ul>
+    </section>
+
+    <!-- 5. Typography -->
+    <section id="typography">
+      <h2>5. Typography</h2>
+      <p>Two Google Fonts are selected for the site and applied across this planning document:</p>
+      <ul>
+        <li><strong>Poppins:</strong> Used for headings (<code>h1</code>, <code>h2</code>, <code>h3</code>) to give section titles a friendly, modern vacation feel.</li>
+        <li><strong>Inter:</strong> Used for body text, lists, and descriptions for clean legibility on both mobile and desktop screens.</li>
+      </ul>
+      <div class="sample-heading">Sample Heading in Poppins (700)</div>
+      <p class="sample-body">Sample body paragraph in Inter (400) for clear, comfortable reading across vacation guides and itineraries.</p>
+    </section>
+
+    <section id="wireframe">
+      <h2>6. Home Page Wireframe</h2>
+      <p>Per course guidelines, wireframes should be created as black-and-white sketches or diagrams of the <strong>small (mobile)</strong> and <strong>large (desktop/tablet)</strong> home page layouts rather than AI-generated HTML wireframes.</p>
+      <div class="wireframe-note">
+        <h3>Planned Sketch Layout</h3>
+        <ul>
+          <li><strong>Small Screen (Mobile):</strong> Stacked header with menu toggle, hero banner with call-to-action button, stacked sections for events, weather, and member spotlights, and a compact footer.</li>
+          <li><strong>Large Screen (Desktop/Tablet):</strong> Horizontal navigation bar, wide hero banner with call-to-action, side-by-side events and weather cards, multi-column spotlight cards, and a two-part footer.</li>
+        </ul>
+        <p><em>Insert your hand-drawn or scanned black-and-white small and large home page wireframe images here before final submission.</em></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Joburg Vacation Chambers &bull; Project Site Plan &bull; WDD 231</p>
+  </footer>
+</body>
+</html>
