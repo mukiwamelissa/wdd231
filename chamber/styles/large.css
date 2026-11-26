@@ -1,3 +1,4 @@
+@media (min-width: 768px) {
   #hamburger-menu {
     display: none;
   }
@@ -95,3 +96,4 @@
     column-gap: 1.15rem;
     align-items: center;
   }
+}
