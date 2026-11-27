@@ -86,6 +86,10 @@
   
 
   .area-card1,
+  .area-card2,
+  .area-card3,
+  .area-card4,
+  .area-card5,
   .area-card6,
   .area-card7,
   .area-card8 {
@@ -97,5 +101,6 @@
       "photo btn";
     column-gap: 1.15rem;
     align-items: center;
+  
   }
 }
