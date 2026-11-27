@@ -1,0 +1,101 @@
+@media (min-width: 768px) {
+  #hamburger-menu {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    width: auto;
+  }
+
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+
+  nav ul li a {
+    border-top: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+  }
+
+  .directory-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .grid-layout {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .list-layout .member-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 2rem;
+  }
+
+  .hero-image {
+    height: 450px;
+  }
+
+  .hero-content {
+    padding: 3rem;
+    text-align: left;
+    max-width: 650px;
+    background: linear-gradient(to right, rgba(14, 107, 122, 0.95), transparent);
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .spotlights-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .join-layout {
+    grid-template-columns: 1.35fr 1fr;
+    align-items: start;
+  }
+
+  .detail-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .discover-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card4 card5 card6 card6"
+      "card7 card7 card8 card8";
+  }
+
+  
+
+  .area-card1,
+  .area-card6,
+  .area-card7,
+  .area-card8 {
+    grid-template-columns: 280px 1fr;
+    grid-template-areas:
+      "photo title"
+      "photo addr"
+      "photo desc"
+      "photo btn";
+    column-gap: 1.15rem;
+    align-items: center;
+  }
+}
