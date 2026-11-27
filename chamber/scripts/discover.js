@@ -1,7 +1,6 @@
 import { attractions } from "../data/discover.mjs";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Mobile Hamburger Menu
   const navMenu = document.getElementById("primary-nav");
   const hamburger = document.getElementById("hamburger-menu");
   if (hamburger && navMenu) {
@@ -10,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 1. LocalStorage Last Visit Calculation
   const visitMessageEl = document.getElementById("visit-message");
   const visitBanner = document.getElementById("visit-banner");
   const closeBannerBtn = document.getElementById("close-banner");
@@ -41,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 2. Render 8 Cards Using Named Grid Areas
   const gridContainer = document.getElementById("discover-grid");
   const modal = document.getElementById("attraction-modal");
   const modalTitle = document.getElementById("modal-title");
